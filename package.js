@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'kromit:accounts-cloudron',
+  name: 'faburem:accounts-cloudron',
   version: '0.0.1',
   summary: 'OAuth2 for Cloudron',
   git: 'https://github.com/faburem/accounts-cloudron',
@@ -15,7 +15,7 @@ Package.onUse(function(api) {
   api.imply('accounts-base', ['client', 'server']);
 
   api.use('accounts-oauth', ['client', 'server']);
-  api.use('kromit:cloudron', ['client', 'server']);
+  api.use('faburem:cloudron', ['client', 'server']);
   
   api.addFiles('accounts-cloudron.js');
 });
